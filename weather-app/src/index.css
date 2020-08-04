@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chilanka', cursive;
+}
+
+.App {
+  background: linear-gradient(rgba(79, 176, 198, 0.7), rgba(79, 134, 198, 0.7)), url("./assets/dawn.jpg") center/cover no-repeat fixed;
+  transition: 0.3 ease-in-out;
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.App.dusk {
+  background: linear-gradient(rgba(219, 22, 47, 0.4), rgba(19, 21, 21, 0.9)), url("./assets/dusk.jpg") center/cover no-repeat fixed;
+}
+
+.search-bar {
+ 
+  width: 700px;
+  margin: 0 0 10px;
+}
+
+.search-bar .search {
+  width: 100%;
+  padding: 20px;
+  appearance: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 3px rgba(0,0,0,0.5);
+  transition: 0.4s ease;
+  font-size: 18px;
+}
+
+.search-bar .search:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 900px) {
+  .search-bar {
+    width: 500px;
+  }
+} 
+
+@media screen and (max-width: 620px) {
+  .search-bar {
+    width: 350px;
+  }
+} 
+
+.details {
+  color: #E8E9EB;
+  font-weight: bolder;
+  font-style: oblique;
+  text-shadow: 3px 3px rgba(0,0,0,0.4);
+}
+
+.location {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px rgba(0,0,0,0.5);
+}
+
+.temp {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  padding-right: 47px;
+  padding-top: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 102px;
+  text-shadow: 2px 6px rgba(0,0,0,0.5);
+}
+
+.weather {
+  color: white;
+  font-size: 50px;
+}
